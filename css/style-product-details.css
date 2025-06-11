@@ -1,0 +1,166 @@
+/* Product Detail Section */
+.product-detail-section {
+  padding: 60px 20px;
+  color: #333;
+}
+
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.product-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 2 1 400px;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.product-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.product-description h3 {
+  font-size: 20px;
+  margin: 25px 0 15px;
+  color: var(--primary);
+}
+
+.product-description p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.product-description ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.product-description li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Additional Information */
+.additional-info {
+  margin-top: 40px;
+}
+
+.info-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.tab-button {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  font-weight: 600;
+  color: var(--primary);
+  width: 30%;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+}
+
+.faq-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 24px;
+  }
+  
+  .product-subtitle {
+    font-size: 16px;
+  }
+  
+  .info-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+  }
+  
+  table th, table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-container {
+    flex-direction: column;
+  }
+  
+  .product-image {
+    max-width: 100%;
+  }
+}
